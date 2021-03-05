@@ -48,8 +48,23 @@
 
   <main class="px-3">
  <!--- ソースコードが気になっちゃうやつ？？ --->
-    <h1>準備中</h1>
-    <p class="lead">Coming soon...</p>
+    <h1 class="mb-5">よ う こ そ</h1>
+
+    <script type="text/javascript">
+    var msg = new Array();
+
+    msg[0] = '<b>Git、何もわからん.....</b>';
+    msg[1] = '<b>Docker? Docekrってなんすか??</b>';
+    msg[2] = '<b>やーい、あまのじゃくぅ！</b>';
+    msg[3] = '<b>ざーこ♡ ざーこ♡</b>';
+    msg[4] = '<b>.....</b>';
+
+    var idx = Math.floor(Math.random() * msg.length);
+
+    document.write(msg[idx]);
+
+    </script>
+
   </main>
 
   <footer class="mt-auto text-white-50">
