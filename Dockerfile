@@ -17,5 +17,5 @@ RUN set -ex && \
     sed -ri -e 's/server\.key/privkey\.pem/g' /usr/local/apache2/conf/extra/httpd-ssl.conf && \
     sed -ie 's/^#SSLCertificateChainFile/SSLCertificateChainFile/1' /usr/local/apache2/conf/extra/httpd-ssl.conf && \
     sed -ri -e 's/server-ca\.crt/chain\.pem/g' /usr/local/apache2/conf/extra/httpd-ssl.conf && \
-    sed -ri -e 's/www\.example\.com/matchaism\.net/g' /usr/local/apache2/conf/extra/httpd-ssl.conf && \
-    sed -ie '267,293 s/AllowOverride None/AllowOverride ALL/' /usr/local/apache2/conf/httpd.conf
+    sed -ri -e 's/www\.example\.com/matchaism\.net/g' /usr/local/apache2/conf/extra/httpd-ssl.conf
+    #sed -ie '267,293 s/AllowOverride None/AllowOverride ALL/' /usr/local/apache2/conf/httpd.conf
