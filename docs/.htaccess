@@ -1,0 +1,11 @@
+# Error Page Change
+ErrorDocument 404 /error/404.html
+
+# === index.htmlなしに統一 ================================
+RewriteEngine on
+#RewriteCond %{THE_REQUEST} ^.*/index\.(html|php|cgi)
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)index\.(html|php|cgi)$ http://matchaism.net/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^.*/index\.(html|php|cgi)
+RewriteCond %{SERVER_PORT} 443
+RewriteRule ^(.*)index\.(html|php|cgi)$ https://matchaism.net/$1 [R=301,L]
