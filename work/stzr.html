@@ -28,63 +28,21 @@
 
 <!-- Custom styles for this template -->
 <link href="../cover.css" rel="stylesheet">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<!-- JS -->
+<script src="../js/component.js" charset="utf-8"></script>
+
 </head>
 
 <body class="d-flex text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-<header class="mb-auto">
-  <div>
-    <h3 class="float-md-start mb-0">Matcha Portal</h3>
-    <nav class="nav nav-masthead justify-content-center float-md-end">
-      <a class="nav-link" href="../index.html">Home</a>
-      <a class="nav-link active" aria-current="page" href="../work.html">Work</a>
-      <!--delete-->
-    </nav>
-  </div>
-</header>
+<script>IncludeHeader("../", "work");</script>
 
 <main>
-  <h1 class="mt-5">Work/stzr</h1>
-  <div class="container mt-3 pb-3">
-
-    <div class="row py-4 align-items-start border-bottom border-white" id="work-stzr">
-      <div class="col-sm-5">
-        <img src="../img/work/stzr.png" class="w-100 mt-2">
-      </div>
-      <div class="col-sm-7">
-        <h4 class="mt-1"><a class="text-decoration-none" href="../work/stzr.html">stzr</a></h4>
-        <p class="lead">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
-          C
-        </p>
-        <p>ジョークコマンドです．ストゼ○のAAが動きます．缶を開ける動作やラベルの変更，打ち上げなどの機能があります．</p>
-        <p>改良後，パッケージ管理システム(brew, aptなど)からインストールできるような形で配布するつもりです．</p>
-        <div class="link-to-outside my-2">
-          <a class="btn btn-primary" href="https://github.com/macchanism/stzr" role="button">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row pt-3 pb-2 align-items-center" id="work-stzr">
-      <div class="col-sm-12 mx-auto">
-        <script async class="docswell-embed" src="https://www.docswell.com/assets/libs/docswell-embed/docswell-embed.min.js" data-src="https://www.docswell.com/slide/K1JEPL/embed" data-aspect="0.5625"></script><div class="docswell-link"><a href="https://www.docswell.com/s/matchaism/K1JEPL-stzr">ジョークコマンドを自作してみた by @matchaism</a></div>
-      </div>
-    </div>
-
-    <div class="row pt-2 pb-2 align-items-center" id="work-stzr">
-      <div class="col-sm-12 mx-auto">
-        <p>自作したジョークコマンドstzrをLTで発表しました．スライドにはデモンストレーションの様子がないため，gifの映像を下に載せております．</p>
-      </div>
-    </div>
-
-    <div class="row pt-2 pb-5 align-items-center border-bottom border-white" id="work-stzr">
-      <div class="col-sm-10 mx-auto">
-        <img src="../img/work/stzr_sample.gif" class="w-100">
-      </div>
-    </div>
-
-  </div>
-
+  <script>IncludeWorkPage("../", "stzr", false);</script>
 </main>
 
 <footer class="mt-5 text-white-50 text-center">

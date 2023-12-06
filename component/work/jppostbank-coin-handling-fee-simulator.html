@@ -1,0 +1,27 @@
+<h1 class="mt-5">Work/JapanPostBank CoinHandlingFee Simulator</h1>
+<div class="container mt-3 pb-3" id="work-jppostbank-coin-handling-fee-simulator">
+
+  <div id="simple-card">
+    <div class="row py-4 align-items-start border-bottom border-white">
+      <div class="col-sm-5">
+        <img src="{$root}img/work/jppostbank-coin-handling-fee-simulator.png" class="w-100 mt-2">
+      </div>
+      <div class="col-sm-7">
+        <h4 class="mt-1">JapanPostBank CoinHandlingFee Simulator</h4>
+        <!--<h4 class="mt-1"><a class="text-decoration-none" href="{$root}work/jppostbank-coin-handling-fee-simulator.html">UEC Kanmeiban Generator</a></h4>-->
+        <p class="lead">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
+          HTML, CSS, JavaScript, Python, Docker
+        </p>
+        <p>ゆうちょ銀行のATMでは硬貨の取扱枚数ごとに手数料(硬貨預払料金)が設定され，差し引かれます．</p>
+        <p>このツールは設定した硬貨枚数から，手数料の割合(硬貨預払料金/投入金額)が最小となるような組み合わせを探索します．</p>
+        <p>(バックエンドですが)クライアント側のデバイスの負荷軽減と高速化のため，サーバに計算させ，Rest APIのやり取りで実行できるようにしました．</p>
+        <div class="link-to-outside my-2">
+          <a class="btn btn-primary" href="http://jp-bank-coin-handling-fee-sim.matchaism.net/" role="button">デプロイページ (HTTP)</a>
+          <a class="btn btn-primary" href="https://github.com/macchanism/jpbank-coin-handling-fee-simulator" role="button">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

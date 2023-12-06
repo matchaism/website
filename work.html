@@ -9,7 +9,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <!-- Favicons -->
-<link rel="shortcut icon" href="img/favicon02.png">
+<link rel="shortcut icon" href="./img/favicon02.png">
 
 <style>
   .bd-placeholder-img {
@@ -27,81 +27,28 @@
 </style>
 
 <!-- Custom styles for this template -->
-<link href="cover.css" rel="stylesheet">
+<link href="./cover.css" rel="stylesheet">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<!-- JS -->
+<script src="./js/component.js" charset="utf-8"></script>
+
 </head>
 
 <body class="d-flex text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-<header class="mb-auto">
-  <div>
-    <h3 class="float-md-start mb-0">Matcha Portal</h3>
-    <nav class="nav nav-masthead justify-content-center float-md-end">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link active" aria-current="page" href="#">Work</a>
-      <!--delete-->
-    </nav>
-  </div>
-</header>
+<script>IncludeHeader("./", "work");</script>
 
 <main>
   <h1 class="mt-5">Work</h1>
   <div class="container mt-3 pb-3">
 
-    <div class="row py-4 align-items-start border-bottom border-white" id="work-stzr">
-      <div class="col-sm-5">
-        <img src="img/work/stzr.png" class="w-100 mt-2">
-      </div>
-      <div class="col-sm-7">
-        <h4 class="mt-1"><a class="text-decoration-none" href="work/stzr.html">stzr</a></h4>
-        <p class="lead">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
-          C
-        </p>
-        <p>ジョークコマンドです．ストゼ○のAAが動きます．缶を開ける動作やラベルの変更，打ち上げなどの機能があります．</p>
-        <p>改良後，パッケージ管理システム(brew, aptなど)からインストールできるような形で配布するつもりです．</p>
-        <div class="link-to-outside my-2">
-          <a class="btn btn-primary" href="https://github.com/macchanism/stzr" role="button">GitHub</a>
-        </div>
-      </div>
-    </div>
+    <script>IncludeWorkPage("./", "stzr", true);</script>
+    <script>IncludeWorkPage("./", "uec-kanmeiban-generator", true);</script>
+    <script>IncludeWorkPage("./", "jppostbank-coin-handling-fee-simulator", true);</script>
 
-    <div class="row py-4 align-items-start border-bottom border-white" id="work-uec-kanmeiban-generator">
-      <div class="col-sm-5">
-        <img src="img/work/uec-kanmeiban-generator.png" class="w-100 mt-2">
-      </div>
-      <div class="col-sm-7">
-        <h4 class="mt-1">UEC Kanmeiban Generator</h4>
-        <p class="lead">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
-          HTML, CSS, JavaScript
-        </p>
-        <p>大学の施設に設置されている館銘板っぽい画像を生成します．館銘板とは，建物名などが記されたパネルで，マンションや公共施設などでよく見られます．</p>
-        <div class="link-to-outside my-2">
-          <a class="btn btn-primary" href="https://uec-kanmeiban-generator.matchaism.net/" role="button">デプロイページ</a>
-          <a class="btn btn-primary" href="https://github.com/macchanism/uec-kanmeiban-generator" role="button">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row py-4 align-items-start border-bottom border-white" id="jppostbank-coin-handling-fee-simulator">
-      <div class="col-sm-5">
-        <img src="img/work/jppostbank-coin-handling-fee-simulator.png" class="w-100 mt-2">
-      </div>
-      <div class="col-sm-7">
-        <h4 class="mt-1">JapanPostBank CoinHandlingFee Simulator</h4>
-        <p class="lead">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
-          HTML, CSS, JavaScript, Python, Docker
-        </p>
-        <p>ゆうちょ銀行のATMでは硬貨の取扱枚数ごとに手数料(硬貨預払料金)が設定され，差し引かれます．</p>
-        <p>このツールは設定した硬貨枚数から，手数料の割合(硬貨預払料金/投入金額)が最小となるような組み合わせを探索します．</p>
-        <p class="font-weight-bold">(バックエンドですが，)デバイスの負荷軽減と高速化のため，シミュレーションをブラウザ上ではなく，サーバに計算させてRest APIのやり取りで実行できるようにしました．</p>
-        <div class="link-to-outside my-2">
-          <a class="btn btn-primary" href="http://jp-bank-coin-handling-fee-sim.matchaism.net/" role="button">デプロイページ(HTTP)</a>
-          <a class="btn btn-primary" href="https://github.com/macchanism/jpbank-coin-handling-fee-simulator" role="button">GitHub</a>
-        </div>
-      </div>
-    </div>
   </div>
 
   <!--
