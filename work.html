@@ -28,49 +28,22 @@
 <script>IncludeHeader("./", "work");</script>
 
 <main>
+
   <h1 class="mt-5">Work</h1>
   <div class="container">
 
-    <script>IncludeWorkPage("./", "stzr", true);</script>
-    <script>IncludeWorkPage("./", "uec-kanmeiban-generator", true);</script>
-    <script>IncludeWorkPage("./", "jppostbank-coin-handling-fee-simulator", true);</script>
+    <script>IncludeWorkPage("./", "work/", "stzr", true);</script>
+    <script>IncludeWorkPage("./", "work/", "uec-kanmeiban-generator", true);</script>
+    <script>IncludeWorkPage("./", "work/", "jppostbank-coin-handling-fee-simulator", true);</script>
 
   </div>
 
-  <h1 class="mt-3">Lifehack</h1>
-  <p>既存の制作物やアイデアを自分用にカスタムしたもの</p>
+  <h2 class="mt-3">Lifehack</h1>
+  <p class="my-0">既存の制作物やアイデアを自分用にカスタムしたもの</p>
   <div class="container">
 
-    <div class="simple-card">
-      <div class="row py-3 align-items-start justify-content-center border-bottom border-white justify-content-center">
-        <div class="col-sm-12">
-          <h4 class="mt-1">dotfiles</h4>
-          <p class="lead">
-            <object type="image/svg+xml" data="./img/code.svg"></object>
-            Shell, etc.
-          </p>
-          <p>「.」からはじまるファイルは設定ファイルです．ターミナルのデザインやalias，アプリケーションの設定を自由にカスタムできます．dotfilesは設定ファイルを他のコンピュータでも引き継げるようにするための設定ファイル集です．</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="simple-card">
-      <div class="row py-3 align-items-start justify-content-center border-bottom border-white justify-content-center">
-        <div class="col-sm-12">
-          <h4 class="mt-1">ubuntu-server-setup</h4>
-          <p class="lead">
-            <object type="image/svg+xml" data="./img/code.svg"></object>
-            Shell, etc.
-          </p>
-          <p>Ubuntuサーバのセットアップスクリプトです．初期設定を自動的に進めてくれるので，設定漏れや設定ミスを防ぎます．定期的にサーバのOSをクリーンインストールするので用意しました．セキュリティ上の設定の誤りがなくなることを期待します．
-          </p>
-          <div class="link-to-outside my-2">
-            <a class="btn btn-primary" href="https://github.com/matchaism/ubuntu-server-setup" role="button">GitHub</a>
-            <a class="btn btn-primary" href="https://macchanism.hateblo.jp/entry/uecadventcalendar2023" role="button">Blog (2023.12.15~)</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script>IncludeWorkPage("./", "lifehack/", "ubuntu-server-setup", true);</script>
+    <script>IncludeWorkPage("./", "lifehack/", "dotfiles", true);</script>
 
   </div>
 

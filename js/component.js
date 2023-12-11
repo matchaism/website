@@ -1,7 +1,7 @@
 // 指定されたワーク名の作業ページを取得し、ルートディレクトリに基づいて表示する関数
-function IncludeWorkPage(rootdir, workname, simplecard) {
+function IncludeWorkPage(rootdir, subdir, workname, simplecard) {
   $.ajax({
-      url: rootdir + "component/work/" + workname + ".html",
+      url: rootdir + "component/" + subdir + workname + ".html",
       cache: false,
       async: false,
       dataType: "html",
