@@ -11,7 +11,7 @@ function IncludeWorkPage(rootdir, workname, simplecard) {
 
           // シンプルカード表示が指定されている場合、対応する要素のみ抽出
           if (simplecard === true) {
-              html = $(html).find('#simple-card').html();
+              html = $(html).find('.simple-card').html();
           }
 
           // HTMLをドキュメントに書き込む
