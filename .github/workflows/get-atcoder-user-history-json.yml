@@ -1,0 +1,34 @@
+name: get-atcoder-user-history-json
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 17 * * 6,0'
+
+env:
+  endpoint: atcoder.jp/users/maccha/history/json
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          git config user.name  "60777705+matchaism"
+          git config user.email "60777705+matchaism@users.noreply.github.com"
+          mkdir -p data
+          wget $endpoint -O data/tmp.json
+          if [ "$(cat data/tmp.json | sha1sum)" != "$(cat data/atcoder.json | sha1sum)" ]
+          then
+            echo "update atcoder.json"
+            rm -rf data/atcoder.json
+            mv data/tmp.json data/atcoder.json
+            git add .
+            git commit -m "wget atcoder.json `date +'%Y-%m-%d-%H-%M-%S'`"
+            git push
+          else
+            echo "already up to date"
+            rm -rf data/tmp.json
+          fi
