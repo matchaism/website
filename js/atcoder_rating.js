@@ -2,6 +2,7 @@ function GetAtCoderRating(rootdir) {
 
   path = rootdir + 'data/atcoder.json';
   lastNewRating = 799;
+  maxRating = 799;
   color = '茶色';
   if (rootdir=='../') color = 'Brown';
 
@@ -36,7 +37,7 @@ function GetAtCoderRating(rootdir) {
   }).always(function(arg1, status, arg2) {
 
     // 取得したNewRatingを表示する要素にセット
-    $('#atcoder_raiting').html('<i class="bi bi-graph-up pe-1"></i>Rating ' + lastNewRating + ' (Max 799), ' + color);
+    $('#atcoder_raiting').html('<i class="bi bi-graph-up pe-1"></i>Rating ' + lastNewRating + ' (Max '+maxRating+'), ' + color);
 
   });
 }
