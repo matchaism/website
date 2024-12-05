@@ -5,7 +5,7 @@ on:
     branches:
       - deploy
   schedule:
-    - cron: '0 17 * * 6,0'
+    - cron: '0 17 * * 0' #'0 17 * * 6,0'
 
 env:
   endpoint: atcoder.jp/users/maccha/history/json
@@ -30,7 +30,7 @@ jobs:
             echo "Updating atcoder.json!!"
             rm -rf data/atcoder.json
             mv data/tmp.json data/atcoder.json
-            git add .
+            git add data/atcoder.json
             git commit -m "wget atcoder.json `date +'%Y-%m-%d-%H-%M-%S'`"
             git push
           else

@@ -13,11 +13,11 @@
  - `./component/(lifehack|work)/`: `./work.html`に掲載するworkやlifehackの中身はここ
 
 ## Deploy
- - deployブランチでcommitが発生すると，Actionsが実行される．
+ - deployブランチでpushが発生すると，Actionsが実行
    - get-atcoder-user-history-jsonの実行 (build)
    - GitHub Pagesの更新 (build-deploy)
- - 指定したタイミングでActionsが自動で実行される．
-   - get-atcoder-user-history-json (JST 02:00 Suday and Monday)
+ - 指定したタイミングでActionsが自動で実行
+   - get-atcoder-user-history-json (JST 02:00 Monday)
 
 ### Procedure
  1. Develop
