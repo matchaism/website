@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  endpoint: atcoder.jp/users/maccha/history/json
+  ENDPOINT: atcoder.jp/users/maccha/history/json
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
           git config user.name  "matchaism"
           git config user.email "60777705+matchaism@users.noreply.github.com"
           mkdir -p data
-          wget $endpoint -O data/tmp.json
+          wget $ENDPOINT -O data/tmp.json
           if [ "$(cat data/tmp.json | sha1sum)" != "$(cat data/atcoder.json | sha1sum)" ]
           then
             echo "Updating atcoder.json!!"
