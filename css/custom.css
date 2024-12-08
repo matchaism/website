@@ -19,8 +19,10 @@ p {
 	margin-bottom: .70rem;
 }
 
-/*
-.grayscale {
-  filter: grayscale(100%);
+.lang.lang-jp {
+  display: block;
 }
-*/
+
+.lang.lang-en {
+  display: none;
+}
