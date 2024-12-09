@@ -21,7 +21,6 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
 <!-- JS -->
-<script src="./js/english.js" charset="utf-8"></script>
 <script src="./js/component.js" charset="utf-8"></script>
 
 </head>
@@ -34,54 +33,33 @@
   <div class="container-fluid my-3">
     <div class="row justify-content-end">
       <div class="col">
-        <div class="lang-jp"><a class="btn btn-outline-light" href="./index.html?lang=en" role="button">ENG</a></div>
-        <div class="lang-en"><a class="btn btn-outline-light" href="./index.html?lang=jp" role="button">JPN</a></div>
+        <a class="btn btn-outline-light" href="./eng/index.html" role="button">ENG</a>
       </div>
     </div>
   </div>
 
   <div class="my-3 text-center">
     <p class="lead">Random Message</p>
-    <p class="lang">
-      <script type="text/javascript">
-        msgJP = [
-          '.....',
-          'ここのコメントはランダムに出力される．',
-          'うおうお',
-          'よ う こ そ',
-          'WE ARE UEC MMA!!'
-        ];
-        msgEN = [
-          '.....',
-          'Messages are displayed randomly here.',
-          'wow wow',
-          'Welcome!!',
-          'WE ARE UEC MMA!!'
-        ];
-        idx = Math.floor(Math.random() * msgJP.length);
-        document.write(`
-          <b class="lang-jp">> ${msgJP[idx]}</b>
-          <b class="lang-en">> ${msgEN[idx]}</b>
-        `);
-      </script>
-    </p>
+    <a>> </a>
+    <script type="text/javascript">
+      var msg = [
+        '.....',
+        'ここのコメントはランダムに出力される．',
+        'うおうお',
+        'よ う こ そ',
+        'WE ARE UEC MMA!!'
+      ];
+      var idx = Math.floor(Math.random() * msg.length);
+      document.write(`<b>${msg[idx]}</b>`);
+    </script>
   </div>
 
   <h2 class="pt-5">What is this?</h2>
-  <div class="lang">
-    <p class="lang-jp">matchaismのポートフォリオ兼ポータルサイトです．</p>
-    <p class="lang-en">Welcome to matchaism's portfolio and portal!!</p>
-  </div>
+  <p>matchaismのポートフォリオ兼ポータルサイトです．</p>
 
   <h2 class="pt-5">Introduction</h2>
-  <div class="lang">
-    <p class="lang-jp">matchaism，matcha，macchaなどのハンドルネームを名乗っています．</p>
-    <p class="lang-en">Call me matchaism, matcha, maccha, etc.</p>
-  </div>
-  <div class="lang">
-    <p class="lang-jp">セキュリティ，認証技術，ネットワーク，サーバ，VR，AR，MRに興味があります．</p>
-    <p class="lang-en">Interests: Cyber security, Authentication Technology, Network, Server, VR, AR, MR</p>
-  </div>
+  <p>matchaism，matcha，macchaなどのハンドルネームを名乗っています．</p>
+  <p>セキュリティ，認証技術，ネットワーク，サーバ，VR，AR，MRに興味があります．</p>
 
   <h2 class="pt-5">Skills</h2>
   <!--
@@ -89,100 +67,46 @@
     <h4 class="mt-4"><img src="./img/logo/python-logo-only.svg" class="grayscale pe-1" width="auto" height="24px">Python</h4>
   -->
   <h4 class="mt-4"><img src="./img/logo/python-logo-only.svg" class="me-1" width="auto" height="24px">Python</h4>
-  <div class="lang">
-    <p class="lang-jp">研究ではPytorchを使用しています．機械学習・深層学習に利用しています．</p>
-    <p class="lang-en">I leverage Pytorch for research (Machine Learning and Deep Learning).</p>
-  </div>
-  <div class="lang">
-    <p class="lang-jp">また，趣味や競プロで使うことが多いです．</p>
-    <p class="lang-en">Python is my go-to language for hobbies and competitive programming.</p>
-  </div>
+  <p>研究ではPytorchを使用しています．機械学習・深層学習に利用しています．</p>
+  <p>また，趣味や競プロで使うことが多いです．</p>
 
   <h4 class="mt-4"><img src="./img/logo/HTML5_Badge.svg" class="me-1" width="auto" height="24px">HTML, CSS, JavaScript</h4>
-  <div class="lang">
-    <p class="lang-jp">このWebサイトやWebサービスの開発に利用しています．</p>
-    <p class="lang-en">I use HTML, CSS and JavaScript to develop websites and web services.</p>
-  </div>
-  <div class="lang">
-    <p class="lang-jp">過去に学祭のWebサイトの制作・管理を担当しました．</p>
-    <p class="lang-en">I co-developed a website for the school festival in 2020 with fellow developers.</p>
-  </div>
+  <p>このWebサイトやWebサービスの開発に利用しています．</p>
+  <p>過去に学祭のWebサイトの制作・管理を担当しました．</p>
 
   <h4 class="mt-4"><img src="./img/logo/cpp_logo.svg" class="me-1" width="auto" height="24px">C++</h4>
-  <div class="lang">
-    <p class="lang-jp">競プロでPythonが不利な場合は，この言語を使います．</p>
-    <p class="lang-en">I use C++ in competitive programming when C++ is preferred over Python.</p>
-  </div>
-  <div class="lang">
-    <p class="lang-jp">また，静的型付け言語を使いたいときによく利用しています．</p>
-    <p class="lang-en">In other situations, I use C++ when I want to use a statically typed language.</p>
-  </div>
+  <p>競プロでPythonが不利な場合は，この言語を使います．</p>
+  <p>また，静的型付け言語を使いたいときによく利用しています．</p>
 
   <h4 class="mt-4"><img src="./img/logo/Git-Icon-1788C.svg" class="me-1" width="auto" height="24px">Git</h4>
-  <div class="lang">
-    <p class="lang-jp">基本的な操作ならできます．</p>
-    <p class="lang-en">I know basic Git commands.</p>
-  </div>
+  <p>基本的な操作ならできます．</p>
 
   <h4 class="mt-4">Shell</h4>
-  <div class="lang">
-    <p class="lang-jp">Bash, Zshをよく利用しています．</p>
-    <p class="lang-en">Bash and Zsh User</p>
-  </div>
+  <p>Bash, Zshをよく利用しています．</p>
 
   <h4 class="mt-4">Linux</h4>
-  <div class="lang">
-    <p class="lang-jp">UbuntuやKali Linuxを利用します．</p>
-    <p class="lang-en">I usually use Ubuntu or Kali Linux.</p>
-  </div>
+  <p>UbuntuやKali Linuxを利用します．</p>
 
   <h2 class="pt-5">Links</h2>
   <h4 class="mt-4"><a href="https://github.com/matchaism" class="text-decoration-none"><img src="./img/logo/github.png" class="me-2" width="auto" height="36px">GitHub</a></h4>
-  <div class="lang">
-    <p class="lang-jp">制作物やlifehackで開発したものなど，色々なソースコードを置いてます．</p>
-    <p class="lang-en">Source codes of my developments and lifehacks</p>
-  </div>
+  <p>制作物やlifehackで開発したものなど，色々なソースコードを置いてます．</p>
 
   <h4 class="mt-4"><a href="https://qiita.com/matchaism" class="text-decoration-none"><img src="./img/logo/qiita.png" class="me-2" width="auto" height="36px">Qiita</a></h4>
-  <div class="lang">
-    <p class="lang-jp">Techな備忘録など</p>
-    <p class="lang-en">Articles about computer technologies</p>
-  </div>
+  <p>Techな備忘録など</p>
 
-  <h4 class="mt-4">
-    <div class="lang">
-      <a href="https://macchanism.hateblo.jp" class="text-decoration-none lang-jp"><img src="./img/logo/hatenablog.svg" class="me-2" width="auto" height="36px" style="background-color:white;">抹茶さんの備忘録</a>
-      <a href="https://macchanism.hateblo.jp" class="text-decoration-none lang-en"><img src="./img/logo/hatenablog.svg" class="me-2" width="auto" height="36px" style="background-color:white;">Hatena Blog</a>
-    </div>
-  </h4>
-  <div class="lang">
-    <p class="lang-jp">備忘録や雑多な記事を書いています．</p>
-    <p class="lang-en">Articles about various genres</p>
-  </div>
+  <h4 class="mt-4"><a href="https://macchanism.hateblo.jp" class="text-decoration-none"><img src="./img/logo/hatenablog.svg" class="me-2" width="auto" height="36px" style="background-color:white;">抹茶さんの備忘録 (Hatena Blog)</a></h4>
+  <p>備忘録や雑多な記事を書いています．</p>
 
   <h4 class="mt-4"><a href="https://www.docswell.com/user/matchaism" class="text-decoration-none"><i class="bi bi-paperclip fs-3 me-1 text-white"></i>Docswell</a></h4>
-  <div class="lang">
-    <p class="lang-jp">発表やLTのスライドを公開しています．</p>
-    <p class="lang-en">My slides of presentaions and LTs</p>
-  </div>
+  <p>発表やLTのスライドを公開しています．</p>
 
   <h2 class="pt-5">Goals</h2>
-  <div class="lang">
-    <p class="lang-jp">2025年に成し遂げたいこと</p>
-    <p class="lang-en">I want to achieve the following goals by 2025.</p>
-  </div>
-  <div class="lang">
-    <ul class="lang-jp">
-      <li>CTFの実力を向上 (2024年の記録を更新)</li>
-      <li>応用情報技術者試験 合格</li>
-      <li>情報処理安全確保支援士試験 合格</li>
-    </ul>
-    <ul class="lang-en">
-      <li>Improving my CTF skills (exceeding 2023's results)</li>
-      <li>Passing Applied Information Technology Engineer Examination (AP)</li>
-      <li>Passing Registered Information Security Specialist Examination (SC)</li>
-    </ul>
-  </div>
+  <p>2025年に成し遂げたいこと</p>
+  <ul>
+    <li>CTFの実力を向上 (2024年の記録を更新)</li>
+    <li>応用情報技術者試験 合格</li>
+    <li>情報処理安全確保支援士試験 合格</li>
+  </ul>
 
 </main>
 
