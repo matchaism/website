@@ -22,7 +22,7 @@ jobs:
 
       - name: Get AtCoder-User-History
         run: |
-          git config user.name  "matchaism"
+          git config user.name  "github-actions"
           git config user.email "60777705+matchaism@users.noreply.github.com"
           mkdir -p data
           wget $ENDPOINT -O data/tmp.json
