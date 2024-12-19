@@ -47,3 +47,20 @@ function IncludeHeader(rootdir, currentpagetype) {
 
   });
 }
+
+// フッターコンポーネントを取得し表示する関数
+function IncludeFooter(rootdir) {
+  $.ajax({
+
+    url: rootdir + "component/footer.html",
+    cache: false,
+    async: false,
+    dataType: "html",
+
+  }).done(function(html, status, xhr) {
+
+    // HTMLをドキュメントに書き込む
+    document.write(html);
+
+  });
+}
