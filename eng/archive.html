@@ -27,39 +27,21 @@
 
 <body class="d-flex text-white bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-<script>IncludeHeader("../", "contest");</script>
+<script>IncludeHeader("../", "archive");</script>
 
 <main>
+
   <div class="container-fluid my-3">
     <div class="row justify-content-end">
       <div class="col">
-        <a class="btn btn-outline-light" href="../contest.html" role="button">JPN</a>
+        <a class="btn btn-outline-light" href="../archive.html" role="button">JPN</a>
       </div>
     </div>
   </div>
 
-  <h2 class="mt-3"><i class="bi bi-code-slash fs-3 pe-1"></i>Competitive Programming</h2>
-  <div class="container-fluid my-3">
-    <div class="row">
-      <div class="col"><h3>AtCoder</h3></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4"><p class="lead"><i class="bi bi-person pe-1"></i>maccha</p></div>
-      <div class="col-sm-8"><p class="lead" id="atcoder_raiting"><i class="bi bi-graph-up pe-1"></i>Rating 799 (Max 799), Brown</p></div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <p>AtCoder is a programming contest website based in Japan. Almost contests are held on the weekend.</p>
-        <div class="link-to-outside my-2">
-          <a class="btn btn-primary" href="https://atcoder.jp/?lang=en"role="button">AtCoder</a>
-          <a class="btn btn-primary" href="https://atcoder.jp/users/maccha?lang=en"role="button">Profile</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h2 class="mt-3">Archive (Article, Blog, Slide)</h2>
 
-  <h2 class="mt-5"><i class="bi bi-flag fs-3 pe-1"></i>CTF (Capture The Flag)</h2>
-  <div class="container-fluid my-3">
+  <div class="container-fluid my-3" id="export">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item" role="year">
         <button class="btn btn-outline-light active mx-1 mt-1" id="tab-2024" data-bs-toggle="tab" data-bs-target="#tab-2024-pane" type="button" role="tab" aria-controls="tab-2024-pane" aria-selected="true">2024</button>
@@ -67,27 +49,32 @@
       <li class="nav-item" role="year">
         <button class="btn btn-outline-light mx-1 mt-1" id="tab-2023" data-bs-toggle="tab" data-bs-target="#tab-2023-pane" type="button" role="tab" aria-controls="tab-2023-pane" aria-selected="false">2023</button>
       </li>
+      <li class="nav-item" role="year">
+        <button class="btn btn-outline-light mx-1 mt-1" id="tab-2022" data-bs-toggle="tab" data-bs-target="#tab-2022-pane" type="button" role="tab" aria-controls="tab-2022-pane" aria-selected="false">2022</button>
+      </li>
+      <li class="nav-item" role="year">
+        <button class="btn btn-outline-light mx-1 mt-1" id="tab-2021" data-bs-toggle="tab" data-bs-target="#tab-2021-pane" type="button" role="tab" aria-controls="tab-2021-pane" aria-selected="false">2021</button>
+      </li>
+      <li class="nav-item" role="year">
+        <button class="btn btn-outline-light mx-1 mt-1" id="tab-2020" data-bs-toggle="tab" data-bs-target="#tab-2020-pane" type="button" role="tab" aria-controls="tab-2020-pane" aria-selected="false">2020</button>
+      </li>
     </ul>
 
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="tab-2024-pane" role="tabpanel" aria-labelledby="tab-2024" tabindex="0">
-
-        <script>IncludePage("../", "eng/component/ctf/2024/", "corctf-2024", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2024/", "deadsec-ctf-2024", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2024/", "imaginaryctf-2024", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2024/", "osctf", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2024/", "downunderctf-2024", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2024/", "uiuctf-2024", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2024/", "wanictf-2024", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2024/", "seccon-beginners-ctf-2024", false);</script>
-
+        <script>IncludePage("../", "component/archive/", "2024", false);</script>
       </div>
       <div class="tab-pane fade" id="tab-2023-pane" role="tabpanel" aria-labelledby="tab-2023" tabindex="0">
-
-        <script>IncludePage("../", "eng/component/ctf/2023/", "tsukuctf-2023", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2023/", "seccon-ctf-2023-quals", false);</script>
-        <script>IncludePage("../", "eng/component/ctf/2023/", "seccon-beginners-ctf-2023", false);</script>
-
+        <script>IncludePage("../", "component/archive/", "2023", false);</script>
+      </div>
+      <div class="tab-pane fade" id="tab-2022-pane" role="tabpanel" aria-labelledby="tab-2022" tabindex="0">
+        <script>IncludePage("../", "component/archive/", "2022", false);</script>
+      </div>
+      <div class="tab-pane fade" id="tab-2021-pane" role="tabpanel" aria-labelledby="tab-2021" tabindex="0">
+        <script>IncludePage("../", "component/archive/", "2021", false);</script>
+      </div>
+      <div class="tab-pane fade" id="tab-2020-pane" role="tabpanel" aria-labelledby="tab-2020" tabindex="0">
+        <script>IncludePage("../", "component/archive/", "2020", false);</script>
       </div>
     </div>
   </div>
