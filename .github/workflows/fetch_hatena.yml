@@ -1,0 +1,52 @@
+name: Fetch Hatena Articles
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Hatena article URLs (space separated)"
+        required: true
+        type: string
+      output-dir:
+        description: "Output directory for JSON files"
+        required: false
+        default: "data/archive"
+        type: string
+
+  workflow_call:
+    inputs:
+      urls:
+        required: true
+        type: string
+      output-dir:
+        required: false
+        default: "data/archive"
+        type: string
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch Hatena articles
+        run: |
+          python scripts/hatena_articles.py ${{ inputs.urls }} --output-dir ${{ inputs.output-dir }}
+
+      - name: Upload generated JSON as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hatena-archive
+          path: ${{ inputs.output-dir }}
