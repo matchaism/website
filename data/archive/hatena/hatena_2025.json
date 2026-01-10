@@ -1,5 +1,68 @@
 [
   {
+    "title": "閉会の挨拶 / maccha Advent Calendar 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day25",
+    "thumbnail_url": "https://cdn.image.st-hatena.com/image/scale/f7675cad2e068781cd1363e68335f34bffe7e73f/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "published_date": "2025/12/25",
+    "site_name": "hatena"
+  },
+  {
+    "title": "2025年の振り返り / maccha Advent Calendar 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day24",
+    "thumbnail_url": "https://cdn.image.st-hatena.com/image/scale/35a28a6f6268432ec355fbacc32ed6ad3f80872a/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmacchanism%2F20251223%2F20251223001110.jpg",
+    "published_date": "2025/12/24",
+    "site_name": "hatena"
+  },
+  {
+    "title": "AIを使ってブログを書いてみて気づいたこと / maccha Advent Calendar 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day17",
+    "thumbnail_url": "https://ogimage.blog.st-hatena.com/26006613530027051/17179246901335307213/1766326324",
+    "published_date": "2025/12/21",
+    "site_name": "hatena"
+  },
+  {
+    "title": "パソコン処分のベタープラクティス / maccha Advent Calendar 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day20",
+    "thumbnail_url": "https://cdn.image.st-hatena.com/image/scale/aa309b2030e58b4cb0ab0a0f1cf2e5b5c5f8e7c7/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmacchanism%2F20251220%2F20251220232210.png",
+    "published_date": "2025/12/20",
+    "site_name": "hatena"
+  },
+  {
+    "title": "こんな技術書を読みたい / maccha Advent Calendar 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day18",
+    "thumbnail_url": "https://ogimage.blog.st-hatena.com/26006613530027051/17179246901333883768/1766240074",
+    "published_date": "2025/12/18",
+    "site_name": "hatena"
+  },
+  {
+    "title": "Zaimで収支管理を始めた / maccha Advent Calener 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day16",
+    "thumbnail_url": "https://ogimage.blog.st-hatena.com/26006613530027051/17179246901333151155/1765813657",
+    "published_date": "2025/12/16",
+    "site_name": "hatena"
+  },
+  {
+    "title": "さいたま新都心で過ごす休日 / maccha Advent Calener 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day08",
+    "thumbnail_url": "https://ogimage.blog.st-hatena.com/26006613530027051/17179246901332794621/1765756934",
+    "published_date": "2025/12/15",
+    "site_name": "hatena"
+  },
+  {
+    "title": "新しいキーボードと新しいタイピング体験 / maccha Advent Calendar 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day07",
+    "thumbnail_url": "https://cdn.image.st-hatena.com/image/scale/657b46e2de3663c9a863e10e4b6a4d2bdb4282d1/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1010839793334227034%2F1449390300182347848%2Fimage.jpg%3Fex%3D693eb967%26is%3D693d67e7%26hm%3D39bf046f54cae832098de7d677ec103be8a735d18556ab803cf473d5ac7ca8e4%26",
+    "published_date": "2025/12/14",
+    "site_name": "hatena"
+  },
+  {
+    "title": "池上周辺のパン屋さん / maccha Advent Calendar 2025",
+    "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day06",
+    "thumbnail_url": "https://cdn.image.st-hatena.com/image/scale/fc5f27954dbdb69b8686c0b5dace4e6814a5e22b/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmacchanism%2F20251213%2F20251213002839.webp",
+    "published_date": "2025/12/13",
+    "site_name": "hatena"
+  },
+  {
     "title": "池上にあるレトロ/おしゃれなカフェ / maccha Advent Calendar 2025",
     "url": "https://macchanism.hateblo.jp/entry/2025/12/maccha-advent-calendar-2025/day12",
     "thumbnail_url": "https://cdn.image.st-hatena.com/image/scale/c629fa2e902ad0b60d63d9cfb89dddef1d9b3441/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fm%2Fmacchanism%2F20251212%2F20251212002719.webp",
