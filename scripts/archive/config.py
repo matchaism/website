@@ -17,4 +17,4 @@ SITE_ICON = {
 
 SITE = ["hatena"]
 
-YEAR = ["2025"]
+YEAR = ["2025", "2026"]
