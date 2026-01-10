@@ -1,0 +1,72 @@
+name: Fetch Hatena Articles
+
+on:
+  workflow_dispatch:
+    inputs:
+      sites:
+        description: "Sites (space separated)"
+        required: false
+        type: string
+      years:
+        description: "Years (space separated)"
+        required: false
+        type: string
+  
+  workflow_call:
+    inputs:
+      sites:
+        required: false
+        type: string
+      years:
+        required: false
+        type: string
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout deploy branch
+        uses: actions/checkout@v4
+        with:
+          ref: deploy
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # pip install -r requirements.txt
+
+      - name: Fetch Hatena articles
+        shell: bash
+        run: |
+          args=()
+          if [ -n "${{ inputs.sites }}" ]; then
+            args+=(--sites "${{ inputs.sites }}")
+          fi
+          if [ -n "${{ inputs.years }}" ]; then
+            args+=(--years "${{ inputs.years }}")
+          fi
+          python scripts/archive/update_archive_pages.py "${args[@]}"
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push to deploy branch
+        run: |
+          if git status --porcelain | grep .; then
+            git add .
+            git commit -m "Update article pages"
+            git push origin deploy
+          else
+            echo "No changes to commit"
+          fi
