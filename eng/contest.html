@@ -1,95 +1,114 @@
 <!doctype html>
 <html lang="ja" class="h-100">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matchaism Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matchaism Portal</title>
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<!-- Favicons -->
-<link rel="shortcut icon" href="../img/favicon02.png">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="../img/favicon02.png">
 
-<!-- CSS -->
-<link href="../css/cover.css" rel="stylesheet">
-<link href="../css/custom.css" rel="stylesheet">
+  <!-- CSS -->
+  <link href="../css/cover.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 
-<!-- JS -->
-<script src="../js/component.js" charset="utf-8"></script>
-<script src="../js/atcoder_rating.js" charset="utf-8"></script>
+  <!-- JS -->
+  <script src="../js/component.js" charset="utf-8"></script>
+  <script src="../js/atcoder_rating.js" charset="utf-8"></script>
 
 </head>
 
 <body class="d-flex text-white bg-dark">
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-<script>IncludeHeader("../", "contest");</script>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <script>IncludeHeader("../", "contest");</script>
 
-<main>
-  <div class="container-fluid my-3">
-    <div class="row justify-content-end">
-      <div class="col">
-        <a class="btn btn-outline-light" href="../contest.html" role="button">JPN</a>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="mt-3"><i class="bi bi-code-slash fs-3 pe-1"></i>Competitive Programming</h2>
-  <div class="container-fluid my-3">
-    <div class="row">
-      <div class="col"><h3>AtCoder</h3></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4"><p class="lead"><i class="bi bi-person pe-1"></i>maccha</p></div>
-      <div class="col-sm-8"><p class="lead" id="atcoder_raiting"><i class="bi bi-graph-up pe-1"></i>Rating 799 (Max 799), Brown</p></div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <p>AtCoder is a programming contest website based in Japan. Almost contests are held on the weekend.</p>
-        <div class="link-to-outside my-2">
-          <a class="btn btn-primary" href="https://atcoder.jp/?lang=en"role="button">AtCoder</a>
-          <a class="btn btn-primary" href="https://atcoder.jp/users/maccha?lang=en"role="button">Profile</a>
+    <main>
+      <div class="container-fluid my-3">
+        <div class="row justify-content-end">
+          <div class="col">
+            <a class="btn btn-outline-light" href="../contest.html" role="button">JPN</a>
+          </div>
         </div>
       </div>
-    </div>
+
+      <h2 class="mt-3"><i class="bi bi-code-slash fs-3 pe-1"></i>Competitive Programming</h2>
+      <div class="container-fluid my-3">
+        <div class="row">
+          <div class="col">
+            <h3>AtCoder</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <p class="lead"><i class="bi bi-person pe-1"></i>maccha</p>
+          </div>
+          <div class="col-sm-8">
+            <p class="lead" id="atcoder_raiting"><i class="bi bi-graph-up pe-1"></i>Rating 799 (Max 799), Brown</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>AtCoder is a programming contest website based in Japan. Almost contests are held on the weekend.</p>
+            <div class="link-to-outside my-2">
+              <a class="btn btn-primary" href="https://atcoder.jp/?lang=en" role="button">AtCoder</a>
+              <a class="btn btn-primary" href="https://atcoder.jp/users/maccha?lang=en" role="button">Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-5"><i class="bi bi-flag fs-3 pe-1"></i>CTF (Capture The Flag)</h2>
+      <div class="container-fluid my-3">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="year">
+            <button class="btn btn-outline-light mx-1 mt-1 active" id="tab-2026" data-bs-toggle="tab"
+              data-bs-target="#tab-2026-pane" type="button" role="tab" aria-controls="tab-2026-pane"
+              aria-selected="true">2026</button>
+          </li>
+          <li class="nav-item" role="year">
+            <button class="btn btn-outline-light mx-1 mt-1" id="tab-2024" data-bs-toggle="tab"
+              data-bs-target="#tab-2024-pane" type="button" role="tab" aria-controls="tab-2024-pane"
+              aria-selected="true">2024</button>
+          </li>
+          <li class="nav-item" role="year">
+            <button class="btn btn-outline-light mx-1 mt-1" id="tab-2023" data-bs-toggle="tab"
+              data-bs-target="#tab-2023-pane" type="button" role="tab" aria-controls="tab-2023-pane"
+              aria-selected="false">2023</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tab-2026-pane" role="tabpanel" aria-labelledby="tab-2026"
+            tabindex="0">
+            <script>IncludePage("../", "eng/component/ctf/", "2026", false);</script>
+          </div>
+          <div class="tab-pane fade" id="tab-2024-pane" role="tabpanel" aria-labelledby="tab-2024" tabindex="0">
+            <script>IncludePage("../", "eng/component/ctf/", "2024", false);</script>
+          </div>
+          <div class="tab-pane fade" id="tab-2023-pane" role="tabpanel" aria-labelledby="tab-2023" tabindex="0">
+            <script>IncludePage("../", "eng/component/ctf/", "2023", false);</script>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script>IncludeFooter("../");</script>
   </div>
-
-  <h2 class="mt-5"><i class="bi bi-flag fs-3 pe-1"></i>CTF (Capture The Flag)</h2>
-  <div class="container-fluid my-3">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="year">
-        <button class="btn btn-outline-light mx-1 mt-1 active" id="tab-2025" data-bs-toggle="tab" data-bs-target="#tab-2025-pane" type="button" role="tab" aria-controls="tab-2025-pane" aria-selected="true">2025</button>
-      </li>
-      <li class="nav-item" role="year">
-        <button class="btn btn-outline-light mx-1 mt-1" id="tab-2024" data-bs-toggle="tab" data-bs-target="#tab-2024-pane" type="button" role="tab" aria-controls="tab-2024-pane" aria-selected="true">2024</button>
-      </li>
-      <li class="nav-item" role="year">
-        <button class="btn btn-outline-light mx-1 mt-1" id="tab-2023" data-bs-toggle="tab" data-bs-target="#tab-2023-pane" type="button" role="tab" aria-controls="tab-2023-pane" aria-selected="false">2023</button>
-      </li>
-    </ul>
-
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="tab-2025-pane" role="tabpanel" aria-labelledby="tab-2025" tabindex="0">
-        <script>IncludePage("../", "eng/component/ctf/", "2025", false);</script>
-      </div>
-      <div class="tab-pane fade" id="tab-2024-pane" role="tabpanel" aria-labelledby="tab-2024" tabindex="0">
-        <script>IncludePage("../", "eng/component/ctf/", "2024", false);</script>
-      </div>
-      <div class="tab-pane fade" id="tab-2023-pane" role="tabpanel" aria-labelledby="tab-2023" tabindex="0">
-        <script>IncludePage("../", "eng/component/ctf/", "2023", false);</script>
-      </div>
-    </div>
-  </div>
-
-</main>
-
-<script>IncludeFooter("../");</script>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script>GetAtCoderRating("../");</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>GetAtCoderRating("../");</script>
 </body>
+
 </html>

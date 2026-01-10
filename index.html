@@ -1,116 +1,136 @@
 <!doctype html>
 <html lang="ja" class="h-100">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matchaism Portal</title>
-<!--- ソースコードが気になっちゃうやつ？？ --->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matchaism Portal</title>
+  <!--- ソースコードが気になっちゃうやつ？？ --->
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<!-- Favicons -->
-<link rel="shortcut icon" href="./img/favicon02.png">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="./img/favicon02.png">
 
-<!-- CSS -->
-<link href="./css/cover.css" rel="stylesheet">
-<link href="./css/custom.css" rel="stylesheet">
+  <!-- CSS -->
+  <link href="./css/cover.css" rel="stylesheet">
+  <link href="./css/custom.css" rel="stylesheet">
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 
-<!-- JS -->
-<script src="./js/component.js" charset="utf-8"></script>
+  <!-- JS -->
+  <script src="./js/component.js" charset="utf-8"></script>
 
 </head>
 
 <body class="d-flex text-white bg-dark">
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-<script>IncludeHeader("./", "home");</script>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <script>IncludeHeader("./", "home");</script>
 
-<main>
-  <div class="container-fluid my-3">
-    <div class="row justify-content-end">
-      <div class="col">
-        <a class="btn btn-outline-light" href="./eng/index.html" role="button">ENG</a>
+    <main>
+      <div class="container-fluid my-3">
+        <div class="row justify-content-end">
+          <div class="col">
+            <a class="btn btn-outline-light" href="./eng/index.html" role="button">ENG</a>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div class="my-3 text-center">
+        <p class="lead">Random Message</p>
+        <a>> </a>
+        <script type="text/javascript">
+          var msg = [
+            '.....',
+            'ここのコメントはランダムに出力される．',
+            'うおうお',
+            'よ う こ そ',
+            'HATSUNE MIKU'
+          ];
+          var idx = Math.floor(Math.random() * msg.length);
+          document.write(`<b>${msg[idx]}</b>`);
+        </script>
+      </div>
+
+      <h2 class="pt-5">What is this?</h2>
+      <p>matchaismのポートフォリオ兼ポータルサイトです．</p>
+
+      <h2 class="pt-5">Introduction</h2>
+      <p>matchaism，matcha，macchaなどのハンドルネームを名乗っています．</p>
+      <p>セキュリティ，認証技術，ネットワーク，サーバ，VR，AR，MRに興味があります．</p>
+
+      <h2 class="pt-5">Skills</h2>
+      <h4 class="mt-4"><img src="./img/logo/python-logo-only.svg" class="me-1" width="auto" height="24px">Python</h4>
+      <p>また，趣味の開発や競プロ，業務において使うことが多いです．</p>
+      <p>学生時代は機械学習・深層学習にPytorchを使用しました．</p>
+
+      <h4 class="mt-4"><img src="./img/logo/HTML5_Badge.svg" class="me-1" width="auto" height="24px">HTML, CSS,
+        JavaScript</h4>
+      <p>このWebサイトやWebサービスの開発に利用しています．</p>
+      <p>過去に学祭のWebサイトの制作・管理を担当しました．</p>
+
+      <h4 class="mt-4"><img src="./img/logo/cpp_logo.svg" class="me-1" width="auto" height="24px">C++</h4>
+      <p>競プロでPythonが不利な場合は，この言語を使います．</p>
+      <p>また，静的型付け言語を使いたいときによく利用しています．</p>
+
+      <h4 class="mt-4"><img src="./img/logo/Git-Icon-1788C.svg" class="me-1" width="auto" height="24px">Git</h4>
+      <p>基本的な操作ならできます．</p>
+
+      <h4 class="mt-4">Shell</h4>
+      <p>Bash, Zshをよく利用しています．</p>
+
+      <h4 class="mt-4">Linux</h4>
+      <p>UbuntuやKali Linuxを利用します．</p>
+
+      <h2 class="pt-5">Links</h2>
+      <h4 class="mt-4"><a href="https://github.com/matchaism" class="text-decoration-none"><img
+            src="./img/logo/github.png" class="me-2" width="auto" height="36px">GitHub</a></h4>
+      <p>制作物やlifehackで開発したものなど，色々なソースコードを置いてます．</p>
+
+      <h4 class="mt-4"><a href="https://qiita.com/matchaism" class="text-decoration-none"><img
+            src="./img/logo/qiita.png" class="me-2" width="auto" height="36px">Qiita</a></h4>
+      <p>Techな備忘録など</p>
+
+      <h4 class="mt-4"><a href="https://macchanism.hateblo.jp" class="text-decoration-none"><img
+            src="./img/logo/hatenablog.svg" class="me-2" width="auto" height="36px"
+            style="background-color:white;">抹茶さんの備忘録 (Hatena Blog)</a></h4>
+      <p>備忘録や雑多な記事を書いています．</p>
+
+      <h4 class="mt-4"><a href="https://www.docswell.com/user/matchaism" class="text-decoration-none"><i
+            class="bi bi-paperclip fs-3 ps-2 pe-1 me-2 text-white" width="auto" height="36px"></i>Docswell</a></h4>
+      <p>発表やLTのスライドを公開しています．</p>
+
+      <h2 class="pt-5">Goals</h2>
+      <p class="lead">2026年の目標</p>
+      <ul>
+        <li>情報処理安全確保支援士試験 (IPA) 合格</li>
+        <li>AZ-104 (Microsoft認定) 合格</li>
+        <li>SC-200 (Microsoft認定) 合格</li>
+      </ul>
+      <p class="lead">2025年に達成したこと</p>
+      <ul>
+        <li>応用情報技術者試験 (IPA) 合格済み</li>
+        <li>AZ-900 (Microsoft認定) 合格済み</li>
+        <li>SC-900 (Microsoft認定) 合格済み</li>
+        <li>ITIL4 Foundation (PeopleCert) 合格済み</li>
+      </ul>
+      <p class="lead">2024年に達成したこと</p>
+      <ul>
+        <li>基本情報技術者試験 (IPA) 合格済み</li>
+      </ul>
+
+    </main>
+
+    <script>IncludeFooter("./");</script>
   </div>
-
-  <div class="my-3 text-center">
-    <p class="lead">Random Message</p>
-    <a>> </a>
-    <script type="text/javascript">
-      var msg = [
-        '.....',
-        'ここのコメントはランダムに出力される．',
-        'うおうお',
-        'よ う こ そ',
-        'HATSUNE MIKU'
-      ];
-      var idx = Math.floor(Math.random() * msg.length);
-      document.write(`<b>${msg[idx]}</b>`);
-    </script>
-  </div>
-
-  <h2 class="pt-5">What is this?</h2>
-  <p>matchaismのポートフォリオ兼ポータルサイトです．</p>
-
-  <h2 class="pt-5">Introduction</h2>
-  <p>matchaism，matcha，macchaなどのハンドルネームを名乗っています．</p>
-  <p>セキュリティ，認証技術，ネットワーク，サーバ，VR，AR，MRに興味があります．</p>
-
-  <h2 class="pt-5">Skills</h2>
-  <!--
-    <object type="image/svg+xml" data="./img/logo/python-logo-only.svg" width="1em" class="grayscale"></object>
-    <h4 class="mt-4"><img src="./img/logo/python-logo-only.svg" class="grayscale pe-1" width="auto" height="24px">Python</h4>
-  -->
-  <h4 class="mt-4"><img src="./img/logo/python-logo-only.svg" class="me-1" width="auto" height="24px">Python</h4>
-  <p>研究ではPytorchを使用しています．機械学習・深層学習に利用しています．</p>
-  <p>また，趣味や競プロで使うことが多いです．</p>
-
-  <h4 class="mt-4"><img src="./img/logo/HTML5_Badge.svg" class="me-1" width="auto" height="24px">HTML, CSS, JavaScript</h4>
-  <p>このWebサイトやWebサービスの開発に利用しています．</p>
-  <p>過去に学祭のWebサイトの制作・管理を担当しました．</p>
-
-  <h4 class="mt-4"><img src="./img/logo/cpp_logo.svg" class="me-1" width="auto" height="24px">C++</h4>
-  <p>競プロでPythonが不利な場合は，この言語を使います．</p>
-  <p>また，静的型付け言語を使いたいときによく利用しています．</p>
-
-  <h4 class="mt-4"><img src="./img/logo/Git-Icon-1788C.svg" class="me-1" width="auto" height="24px">Git</h4>
-  <p>基本的な操作ならできます．</p>
-
-  <h4 class="mt-4">Shell</h4>
-  <p>Bash, Zshをよく利用しています．</p>
-
-  <h4 class="mt-4">Linux</h4>
-  <p>UbuntuやKali Linuxを利用します．</p>
-
-  <h2 class="pt-5">Links</h2>
-  <h4 class="mt-4"><a href="https://github.com/matchaism" class="text-decoration-none"><img src="./img/logo/github.png" class="me-2" width="auto" height="36px">GitHub</a></h4>
-  <p>制作物やlifehackで開発したものなど，色々なソースコードを置いてます．</p>
-
-  <h4 class="mt-4"><a href="https://qiita.com/matchaism" class="text-decoration-none"><img src="./img/logo/qiita.png" class="me-2" width="auto" height="36px">Qiita</a></h4>
-  <p>Techな備忘録など</p>
-
-  <h4 class="mt-4"><a href="https://macchanism.hateblo.jp" class="text-decoration-none"><img src="./img/logo/hatenablog.svg" class="me-2" width="auto" height="36px" style="background-color:white;">抹茶さんの備忘録 (Hatena Blog)</a></h4>
-  <p>備忘録や雑多な記事を書いています．</p>
-
-  <h4 class="mt-4"><a href="https://www.docswell.com/user/matchaism" class="text-decoration-none"><i class="bi bi-paperclip fs-3 ps-2 pe-1 me-2 text-white" width="auto" height="36px"></i>Docswell</a></h4>
-  <p>発表やLTのスライドを公開しています．</p>
-
-  <h2 class="pt-5">Goals</h2>
-  <p class="lead">2025年の目標</p>
-  <ul>
-    <li>CTFの実力を向上 (2024年の記録を更新)</li>
-    <li>応用情報技術者試験 合格</li>
-  </ul>
-
-</main>
-
-<script>IncludeFooter("./");</script>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
