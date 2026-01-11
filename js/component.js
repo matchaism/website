@@ -7,7 +7,7 @@ function IncludePage(rootdir, subdirs, pagename, simplecard) {
     async: false,
     dataType: "html",
 
-  }).done(function(html, status, xhr) {
+  }).done(function (html, status, xhr) {
 
     // ルートディレクトリのプレースホルダーを実際のルートディレクトリに置換
     html = html.replace(/\{\$root\}/g, rootdir);
@@ -30,7 +30,7 @@ function IncludeHeader(rootdir, currentpagetype) {
     async: false,
     dataType: "html",
 
-  }).done(function(html, status, xhr) {
+  }).done(function (html, status, xhr) {
 
     // ルートディレクトリのプレースホルダーを実際のルートディレクトリに置換
     html = html.replace(/\{\$root\}/g, rootdir);
@@ -57,7 +57,7 @@ function IncludeFooter(rootdir) {
     async: false,
     dataType: "html",
 
-  }).done(function(html, status, xhr) {
+  }).done(function (html, status, xhr) {
 
     // HTMLをドキュメントに書き込む
     document.write(html);
